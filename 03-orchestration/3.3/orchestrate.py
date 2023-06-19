@@ -125,10 +125,10 @@ def main_flow(
     df_val = read_data(val_path)
 
     # Transform
-    X_train, X_val, y_train, y_val, dv = add_features(df_train, df_val)
+    x_train, x_val, y_train, y_val, dv = add_features(df_train, df_val)
 
     # Train
-    train_best_model(X_train, X_val, y_train, y_val, dv)
+    train_best_model(x_train, x_val, y_train, y_val, dv)
 
 
 if __name__ == "__main__":
